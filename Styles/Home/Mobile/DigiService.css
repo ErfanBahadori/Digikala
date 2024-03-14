@@ -32,7 +32,7 @@
       display: flex;
       background-color: var(--color-neutral-100);
       border-radius: 99px;
-      padding: 0.5rem;
+      padding: 0.88rem;
       & img {
         width: 2.25rem;
       }
