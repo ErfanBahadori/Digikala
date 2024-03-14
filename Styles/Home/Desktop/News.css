@@ -1,0 +1,12 @@
+.News__Parent {
+  .News__Header {
+    padding: 1.2rem 2rem !important;
+  }
+  .News__Items__Container {
+    grid-template-columns: auto auto auto auto !important;
+    & a {
+      min-width: unset !important;
+      min-height: unset !important;
+    }
+  }
+}

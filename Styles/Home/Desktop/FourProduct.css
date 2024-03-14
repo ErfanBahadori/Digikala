@@ -1,0 +1,4 @@
+.Four__Parent {
+  grid-template-columns: auto auto auto auto !important;
+  grid-template-rows: auto !important;
+}

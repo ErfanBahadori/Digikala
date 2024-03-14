@@ -1,0 +1,75 @@
+.TopSales__Parent {
+  width: 100%;
+  max-width: 1336px;
+  .TopSales__Container {
+    .TopSales__Header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        & p {
+          font-size: 1.15em;
+        }
+      }
+      & button {
+        background-color: transparent;
+        border: 0px;
+        font-family: "Yekan";
+        color: var(--color-secondry-500);
+      }
+    }
+    .TopSales__Items__Container , .My__TopSales {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      overflow-y: hidden;
+      overflow-x: auto;
+      padding: 0 0.5rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      & div , .swiper-slide {
+        .TopSale__Items {
+          display: block;
+          min-width: 280px;
+          margin-top: 1rem;
+          text-decoration: none;
+          color: var(--color-neutral-900);
+          & div {
+            display: flex;
+            align-items: center;
+            .TopSale__Image {
+              margin-left: 0.8rem;
+              & img {
+                width: 5.5rem;
+              }
+            }
+            .TopSale__Number {
+              margin-left: 0.8rem;
+              font-size: 1.5em;
+              font-weight: 800;
+              color: var(--color-secondry-500);
+            }
+            .TopSale__Description {
+              & p {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                font-size: 0.7em;
+                line-height: 2.17;
+              }
+            }
+          }
+        }
+      }
+    }
+    .My__TopSales{
+      display: none;
+    }
+  }
+}

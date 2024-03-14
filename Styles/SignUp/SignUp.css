@@ -1,0 +1,75 @@
+.Sign__In__Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Sign__In {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    .Sign__In__Image__Container {
+      display: flex;
+      justify-content: center;
+      & img {
+        width: 9rem;
+      }
+    }
+    & h3 {
+      font-weight: 500;
+    }
+    .Sign__In__Head__P__Container {
+      & p {
+        font-size: 0.7em;
+        line-height: 1.8rem;
+      }
+    }
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      & input[type="text"] {
+        padding: 0.8rem;
+        border: none;
+        border-bottom: 2px solid var(--color-secondry-500);
+        border-radius: 10px;
+        outline: none;
+        background-color: var(--color-neutral-100);
+        caret-color: var(--color-secondry-500);
+        font-size: 1em;
+      }
+      & button {
+        padding: 0.8rem;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color--button--primary);
+        color: var(--color-neutral-100);
+        font-family: "Yekan", "sans-serif";
+        font-size: 1em;
+      }
+    }
+    .Sign__In__Privacy {
+      font-size: 0.6em;
+    }
+  }
+}
+@media only screen and (min-width:1025px){
+  .Sign__In__Container{ 
+    .Sign__In{
+      padding: 2rem 1.5rem;
+      border: 1px solid var(--color-neutral-200) ;
+      & form{
+        & input[type="text"]{
+          border: 1px solid var(--color-secondry-500);
+          background-color: transparent;
+          
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Club__Parent {
+  padding: 0 1.2rem;
+  .Club__Container {
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    .Club__Items__Container {
+      .Club__Items {
+        & a {
+          display: flex !important;
+          flex-flow: row wrap !important;
+          align-items: center;
+          gap: 1rem;
+          padding: 0.1rem 1rem 0.1rem 0;
+          .Club__Items__Title{
+            flex-flow: row wrap;
+            gap: 0.5rem;
+          }
+          .Club__Images{
+            max-width: 120px;
+          }
+        }
+      }
+    }
+  }
+}

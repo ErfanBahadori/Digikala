@@ -1,0 +1,234 @@
+footer {
+  position: relative !important;
+  margin-top: 4rem;
+  .Mobile__Footer {
+    display: none !important;
+  }
+  .Desktop__Footer {
+    display: block !important;
+    .Desktop__Sub__Footer {
+      padding: 3rem 1.5rem 1.5rem 1.5rem;
+      .Footer__Back__To__Top {
+        display: flex;
+        justify-content: space-between;
+        & button {
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          padding: 0.5rem  1rem;
+          font-family: "Yekan", sans-serif;
+          font-size: 0.8em;
+          color: var(--color-neutral-500);
+          background-color: var(--color-neutral-000);
+          border: 1px solid var(--color-neutral-500);
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+      .Footer__Contact__Info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        margin: 1rem 0;
+        & p {
+          font-size: 0.8em;
+          color: var(--color-neutral-500);
+        }
+      }
+      .Footer__Benefits {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 4rem 0;
+        .Benefits__Container {
+          text-align: center;
+          & p {
+            font-size: 0.75em;
+            margin-top: 0.5rem;
+            color: var(--color-neutral-500);
+          }
+        }
+      }
+      .Footer__Suggest {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .Suggest__Container {
+          text-align: right;
+          & h3 {
+            font-size: 0.95em;
+          }
+          & p {
+            margin-top: 1rem;
+            font-size: 0.85em;
+            color: var(--color-neutral-500);
+          }
+          .Social__Link {
+            display: flex;
+            gap: 1.5rem;
+            margin: 2rem 0;
+          }
+          .Form__Input {
+            & form {
+              margin: 1rem 0;
+              direction: rtl;
+              & input {
+                padding: 0.8rem 0.9rem;
+                font-family: "Yekan", sans-serif;
+                font-size: 1em;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(203, 203, 203);
+                color: white;
+              }
+              & input[type="email"] {
+                width: 79%;
+                background-color: rgb(234, 231, 231);
+              }
+            }
+          }
+        }
+      }
+      .Footer__App__Link {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-dark-neutral-000);
+        padding: 1rem;
+        margin: 2rem 0;
+        border-radius: 10px;
+        .App__link__Logo {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1em;
+          & img {
+            display: block;
+            width: 3rem;
+          }
+          & span {
+            font-size: 1.3em;
+            color: var(--color-neutral-000);
+          }
+        }
+        .App__Link__Container {
+          display: flex;
+          align-items: baseline;
+          flex-direction: row;
+          gap: 1.5rem;
+          .App__Links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+            & a {
+              & img {
+                display: block;
+              }
+            }
+            .More__App__Links{
+              width: 3rem;
+              height: 3rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: var(--color-neutral-000);
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+      .Footer__Certificate {
+        display: flex;
+        gap: 5rem;
+        .Certificate__Photo {
+          display: flex;
+          height: fit-content;
+          gap: 0.5rem;
+          .Photo {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--color-neutral-500);
+            border-radius: 5px;
+            img {
+              width: 4rem;
+              margin: 0.5rem 1rem;
+            }
+          }
+        }
+        .Services {
+          height: fit-content;
+          .Services__Container {
+            height: 8rem;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 0.5rem;
+            & h2 {
+              margin: 0.5rem 0;
+              font-size: 1.3em;
+              color: var(--color-neutral-500);
+            }
+            & h3 {
+              margin: 0.5rem 0;
+              font-size: 1.1em;
+              color: var(--color-neutral-500);
+            }
+            & p {
+              font-size: 0.8em;
+              color: var(--color-neutral-500);
+              line-height: 2rem;
+            }
+            &::before {
+              background: linear-gradient(
+                180deg,
+                hsla(0, 0%, 100%, 0) 50%,
+                #fff
+              );
+              content: "";
+              height: 100%;
+              width: 100%;
+              position: absolute;
+            }
+          }
+          .services__text{
+            width: fit-content;
+            display: flex;
+            gap: 0.3rem;
+            cursor: pointer;
+            & p{
+              font-size: 0.85em;
+              color: var(--color-secondry-500);
+            }
+          }
+          .Services__Extend{
+            height: fit-content;
+            &::before{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .Footer__Barnds {
+      width: 100;
+      margin: 3rem 0 0 0;
+      .Brands__First__Row,
+      .Brands__Second__Row {
+        display: flex;
+        align-items: center;
+        & a {
+          width: 100%;
+          padding: 1.5rem 1rem;
+          background-color: var(--color-neutral-100);
+          text-align: center;
+          border: 1px solid var(--color-neutral-200);
+          & img {
+            height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

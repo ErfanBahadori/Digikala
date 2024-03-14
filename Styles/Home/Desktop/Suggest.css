@@ -1,0 +1,55 @@
+.Sugggest__Parent {
+  .Suggestion__Container {
+    .My__Suggest {
+      display: block !important;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--color-neutral-200);
+      border-radius: 15px;
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 185.4px !important;
+          display: flex;
+          flex-flow: column wrap;
+          .Suggestion__Item {
+            width: 100%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--color-neutral-200);
+            & a {
+              height: 100%;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 1rem;
+              text-decoration: none;
+              & div{
+                background-color: var(--color-neutral-100);
+                padding: 0.8rem;
+                border-radius: 99px;
+                overflow: hidden;
+                & img {
+                  width: 4rem;
+                  display: block;
+                  mix-blend-mode:  multiply;
+                }
+              }
+              & span {
+                font-size: 0.8em;
+                color: var(--color-neutral-900);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Suggestion {
+    display: none !important;
+  }
+}
+

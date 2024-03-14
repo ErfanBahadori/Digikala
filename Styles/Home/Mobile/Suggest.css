@@ -1,0 +1,66 @@
+.Sugggest__Parent {
+  width: 100%;
+  max-width: 1336px;
+  .Suggestion__Container {
+    text-align: center;
+    padding: 0 19px;
+    .Suggestion__Header {
+      margin: 2rem 0;
+    }
+    .Suggestion {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto;
+      overflow-x: scroll;
+      direction: rtl;
+      border: 2px solid var(--color-neutral-200);
+      border-radius: 20px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .Suggestion__Item {
+        width: 11rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-neutral-200);
+        & a {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          text-decoration: none;
+          & img {
+            width: 4rem;
+          }
+          & span {
+            font-size: 0.8em;
+            color: var(--color-neutral-900);
+          }
+        }
+      }
+      .First__Row {
+        border-color: var(--color-neutral-200);
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+      }
+      .Second__Row {
+        border-color: var(--color-neutral-200);
+        border-style: solid;
+        border-width: 0 1px 0 1px;
+      }
+      .First__Suggest,
+      .Last__Suggest {
+        border-right: 0;
+        border-left: 0;
+      }
+    }
+    .My__Suggest{
+      display: none ;
+    }
+  }
+}

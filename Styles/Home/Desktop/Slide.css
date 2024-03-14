@@ -1,0 +1,6 @@
+.Slide__Parent {
+  height: 400px !important;
+  .arrow__container {
+    top: 80% !important;
+  }
+}

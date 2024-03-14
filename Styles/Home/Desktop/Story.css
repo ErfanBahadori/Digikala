@@ -1,0 +1,13 @@
+.Story__Container__Desktop {
+  display: flex !important;
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        width: fit-content !important;
+      }
+    }
+  }
+}
+.Story__Container {
+  display: none !important;
+}

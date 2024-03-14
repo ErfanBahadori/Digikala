@@ -1,0 +1,16 @@
+.One__Parent {
+  width: 100%;
+  max-width: 1336px;
+  .One__Parent__Container {
+    padding: 0 1.2rem;
+    & a {
+      display: block;
+      border-radius: 15px;
+      overflow: hidden;
+      & img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

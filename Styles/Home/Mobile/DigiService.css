@@ -1,0 +1,41 @@
+.Digi__Parent {
+  width: 100%;
+  max-width: 1336px;
+  .digi__Container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    row-gap: 1.5rem;
+    direction: rtl;
+    padding: 0 1rem;
+    .digi__Service {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+      & span {
+        font-size: 0.65em;
+        font-weight: 400;
+      }
+      & img {
+        width: 3.25rem;
+      }
+    }
+    .More {
+      display: flex;
+      background-color: var(--color-neutral-100);
+      border-radius: 99px;
+      padding: 0.5rem;
+      & img {
+        width: 2.25rem;
+      }
+    }
+  }
+}

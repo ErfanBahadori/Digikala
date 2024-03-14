@@ -1,0 +1,17 @@
+.Two__Parent {
+  width: 100%;
+  max-width: 1336px;
+  .Two__Product__Container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    padding: 0 1.2rem;
+    .Two__Items {
+      & img {
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+      }
+    }
+  }
+}

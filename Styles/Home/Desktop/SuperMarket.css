@@ -1,0 +1,53 @@
+.Market {
+  flex-flow: row nowrap !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 2rem !important;
+  gap: 4rem !important;
+  .Market__Logo {
+    gap: 1rem !important;
+    .Market__Logo__Image__Container {
+      & img{
+        &:first-of-type {
+          width: 4rem !important;
+        }
+        &:last-of-type {
+          width: 16rem !important;
+        }
+      }
+    }
+  }
+  .Market__Items {
+    gap: 0.5rem;
+    .Market__Product {
+      justify-content: flex-end !important;
+      gap: 0 !important;
+      & div{
+        margin: 0 0 0.5rem 0.5rem;
+      }
+      .SuperMarket__Hidden , .SuperMarket__Full__Hidden{
+        display: block !important;
+      }
+    }
+    .Market__All {
+      gap: 0.5rem;
+      & span {
+        display: block !important;
+        white-space: nowrap;
+        font-size: 0.8em;
+        color: var(--color-fresh-700);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .Market__Logo__Text__Container {
+    display: block !important;
+    background-color: var(--color-fresh-700);
+    padding: 0.2rem 0.8rem;
+    border-radius: 99px;
+    & p {
+      color: var(--color-neutral-000);
+    }
+  }
+}

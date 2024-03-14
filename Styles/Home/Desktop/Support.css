@@ -1,0 +1,12 @@
+.Support__Parent {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 4;
+  bottom: 1.5%;
+  left: 4.5%;
+  padding: 0.75rem ;
+  background-color: var(--color-dark-brand-primary);
+  border-radius: 99px;
+}

@@ -1,0 +1,139 @@
+.Card__Parent {
+  width: 100%;
+  max-width: 1336px;
+  height: 260px;
+  .My__Cards__Mobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+    background-color: var(--color-dark-brand-primary);
+      padding: 0.8rem 0 0.8rem 1rem;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .Cards {
+      display: block;
+      width: 154px;
+      min-width: 154px;
+      max-width: 154px;
+      height: 100%;
+      .Offer__Logo {
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        .Offer__Text,
+        .Offer__Image {
+          & img {
+            width: 5rem;
+          }
+        }
+        .Offer__Link {
+          display: flex;
+          align-items: center;
+          & img {
+            width: 0.7rem;
+          }
+          & span {
+            font-size: 0.8em;
+            color: var(--color-neutral-000);
+          }
+        }
+      }
+      .Cards__Items {
+        display: block;
+        height: 100%;
+        background-color: var(--color-neutral-000);
+        text-decoration: none;
+        & article {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          height: 100%;
+          padding: 0.6rem;
+          .Card__Image{
+            & img {
+              width: 8.15rem;
+            }
+          }
+          .Card__Info {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+            .Sale {
+              padding: 0.1rem 0.5rem;
+              font-size: 0.7em;
+              background-color: var(--color-dark-brand-primary);
+              color: var(--color-neutral-000);
+              border-radius: 20px;
+            }
+            & p {
+              font-size: 0.8em;
+              color: var(--color-neutral-900);
+              font-weight: 500;
+            }
+          }
+          .Card__Last__Info{
+            width: 100%;
+            text-align: left;
+            padding-left: 2rem;
+            margin-top: 0.3rem;
+            opacity: 0.7;
+            & span{
+              font-size: 0.7em;
+              color: var(--color-neutral-500);
+            }
+          }
+        }
+      }
+      .Card__All__Items {
+        display: block;
+        height: 100%;
+        min-width: 160px;
+        background-color: var(--color-neutral-000);
+        text-decoration: none;
+        & article {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          padding: 0 2.1rem;
+          .Card__All {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            gap: 1rem;
+            width: 90px;
+            .Card__All__Arrow {
+              padding: 0.7rem 1rem 0.5rem 0.8rem;
+              border: 2px solid var(--color-secondry-500);
+              border-radius: 99px;
+            }
+            & span {
+              font-size: 0.7em;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .First {
+        border-radius: 0 10px 10px 0;
+      }
+      .Last {
+        border-radius: 10px 0 0 10px;
+      }
+    }
+  }
+  .My__Cards__Desktop{
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Yekan;
+  src: url(../Assets/Font/IRANYekanWeb.eot);
+  src: url(../Assets/Font/IRANYekanWeb.woff);
+  src: url(../Assets/Font/IRANYekanWeb.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Yekan", sans-serif;
+  .Wrapper {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: var(--color-neutral-000);
+      border-radius: 100%;
+      border: 1px solid var(--color-neutral-200);
+      &::after {
+        font-size: 0.7em;
+        font-weight: bold;
+        color: var(--color-neutral-900);
+      }
+    }
+    .swiper-button-disabled {
+      opacity: 0 !important;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--color-neutral-200);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-neutral-500);
+  }
+}
+.disable__scroll {
+  overflow: hidden !important;
+}
+:root {
+  --color-neutral-000: #ffffff;
+  --color-neutral-100: #f0f0f1;
+  --color-neutral-200: #e0e0e2;
+  --color-neutral-500: #81858b;
+  --color-neutral-900: #000000;
+  --color-dark-brand-primary: #e6123d;
+  --color-secondry-500: #19bfd3;
+  --color-fresh-700: #39ae00;
+  --color-plus-500: #b12ba4;
+  --color-plus-700: #941b80;
+  --color-icon-warning: #f9a825;
+  --color--button--primary: #ef4056;
+  --color-electronic-500: #5c51bf;
+  --color-dark-neutral-000: #3c4b6d;
+  --color-dark-button: #13244d;
+}

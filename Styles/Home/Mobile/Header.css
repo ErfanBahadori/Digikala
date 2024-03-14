@@ -1,0 +1,154 @@
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem;
+  z-index: 6;
+  background-color: var(--color-neutral-000);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.14), 0 2px 0 rgba(0, 0, 0, 0.05);
+  .Search__Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-000);
+    /*****************SEARCH BAR*****************/
+    .Search__Bar__Container {
+      width: 100%;
+      align-items: center;
+      gap: 1rem;
+      .Desktop__Logo {
+        display: none;
+      }
+      .Search__Elements {
+        width: 100%;
+        padding: 0.65rem;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        z-index: 2;
+        background-color: var(--color-neutral-100);
+        color: var(--color-neutral-500);
+        border-radius: 10px;
+        & p {
+          font-size: 0.8em;
+        }
+        .Mobile__Logo {
+          width: 5.5rem;
+        }
+      }
+      /*****************SEARCH PAGE****************/
+      .Search__Page {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        bottom: -100rem;
+        z-index: 3;
+        background-color: var(--color-neutral-000);
+        transition: bottom;
+        transition-duration: 0.5s;
+        .Search__Page__Container {
+          padding: 0 1rem;
+          .Search__Page__Input {
+            width: 100%;
+            padding: 1.5rem 0 0.5rem 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--color-neutral-500);
+            border-bottom: 2px solid var(--color-secondry-500);
+            & span {
+              display: flex;
+            }
+            .Search__Icon{
+              display: none;
+            }
+            & input {
+              width: 15rem;
+              height: 1.3rem;
+              direction: rtl;
+              border: none;
+              outline: none;
+              font-family: "Yekan", sans-serif;
+              font-size: 0.7em;
+            }
+          }
+        }
+        .search__Box {
+          padding: 2rem 0;
+          .popular__Search {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 1.5rem;
+            & p {
+              font-size: 0.81em;
+            }
+          }
+          .popular__Container {
+            padding: 0.5rem 0;
+            .popular__Option {
+              width: 100%;
+              display: block;
+              overflow-x: scroll;
+              scrollbar-width: none;
+              -ms-overflow-style: none;
+              padding: 0 0.5rem;
+              white-space: nowrap;
+              &::-webkit-scrollbar {
+                display: none;
+              }
+              & a {
+                width: fit-content;
+                display: inline-block;
+                white-space: nowrap;
+                padding: 0.5rem 0.7rem;
+                border: 1px solid var(--color-neutral-200);
+                border-radius: 20px;
+                text-decoration: none;
+                & div {
+                  display: flex;
+                  align-items: center;
+                  gap: 0.3rem;
+                  & span {
+                    color: var(--color-neutral-900);
+                    font-size: 0.76em;
+                  }
+                }
+              }
+            }
+            .MyPopular{
+              display: none;
+            }
+          }
+        }
+      }
+      .Search__Page__Open {
+        bottom: 0;
+      }
+    }
+    /*****************SIGN CART******************/
+    .Sign__Cart {
+      display: none;
+    }
+  }
+  nav {
+    display: none;
+  }
+  .City__page__container{
+    display: none;
+  }
+}
+.open {
+  top: 0;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
